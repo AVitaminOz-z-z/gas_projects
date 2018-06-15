@@ -16,10 +16,6 @@
  *   "2220;sergei;17/May/18 11:04 AM;Maria A\r\n
  *   Anastasya P\r\n
  *   Andrey B"
-
-
- 
- 
  * -----------------------------------------------------------------------------------
  */
 function REVERSEBYDELIMITER(input_string, str_delimiter) {
