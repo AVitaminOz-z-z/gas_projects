@@ -16,6 +16,12 @@
  *   "2220;sergei;17/May/18 11:04 AM;Maria A\r\n
  *   Anastasya P\r\n
  *   Andrey B"
+ *  
+ *   Sheet E[ample:
+ *   =LEFT(REVERSEBYDELIMITER(AF2, ";"), FIND(";",REVERSEBYDELIMITER(AF2, ";"))-1)
+ *   =IFERROR(LEFT(REVERSEBYDELIMITER(AH2, ";"), FIND(";",REVERSEBYDELIMITER(AH2, ";"))-1), "")
+ *   =VALUE(IFERROR(LEFT(REVERSEBYDELIMITER(AF5, ";"), FIND(";",REVERSEBYDELIMITER(AF5, ";"))-1), 0))
+ *   =QUERY(C23:C25, "select VALUE(IFERROR(LEFT(REVERSEBYDELIMITER(С, "&B23&"), FIND("&B23&",REVERSEBYDELIMITER(С, "&B23&"))-1), 0))"))
  * -----------------------------------------------------------------------------------
  */
 function REVERSEBYDELIMITER(input_string, str_delimiter) {
